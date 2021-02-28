@@ -1,16 +1,42 @@
 {
-    "name": "sensor-immersion-general",
-    "version": "0.0.0",
+    "name": "sensor-immersion",
+    "version": "0.1.1",
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "radio": "*"
     },
     "files": [
         "README.md",
         "main.blocks",
-        "main.ts"
+        "main.ts",
+        "Lesson2/New/environmental.md",
+        "Lesson2/New/sound.md",
+        "Lesson2/New/soilMoisture.md",
+        "Lesson2/New/magnetometer.md",
+        "Lesson2/Experienced/environmental.md",
+        "Lesson2/Experienced/magnetometer.md",
+        "Lesson2/Experienced/soilMoisture.md",
+        "Lesson2/Experienced/sound.md",
+        "Lesson2/Extensions/environmental.md",
+        "Lesson2/Extensions/magnetometer.md",
+        "Lesson2/Extensions/soilMoisture.md",
+        "Lesson2/Extensions/sound.md",
+        "Lesson3/New/environmental.md",
+        "Lesson3/New/sound.md",
+        "Lesson3/New/soilMoisture.md",
+        "Lesson3/Experienced/environmental.md",
+        "Lesson3/Experienced/soilMoisture.md",
+        "Lesson3/Experienced/sound.md",
+        "Lesson3/Extensions/environmental.md",
+        "Lesson3/Extensions/soilMoisture.md",
+        "Lesson3/Extensions/sound.md",
+        "AdditionalExtensions/magnetometer_datalogger.md",
+        "AdditionalExtensions/magnetometer_datalogger_radio.md",
+        "AdditionalExtensions/metal_detector.md",
+        "AdditionalExtensions/modified_metal_detector.md",
+        "AdditionalExtensions/data_display.md",
+        "AdditionalExtensions/data_display_ext.md"
     ],
     "testFiles": [
         "test.ts"
@@ -19,5 +45,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
