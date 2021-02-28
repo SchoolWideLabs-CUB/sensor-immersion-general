@@ -1,14 +1,20 @@
-# show sound tutorial
+# show particle tutorial
 ### @explicitHints true
  
 ## Step 1
  
-We are going to learn how to use a micro:bit and gatorMicrophone to display sound values
+We are going to learn how to use a micro:bit and gatorMicrophone to display particle values using red light. 
+First we have to ``||gatorParticle: initialize||`` the particle sensor when we ``||basic: turn on||`` the micro:bit.
  
 ```template
 input.onButtonPressed(Button.A, function () {
     
 })
+```
+
+#### ~ tutorialhint 
+```blocks
+gatorParticle.begin()
 ```
  
 ## Step 2
@@ -30,14 +36,14 @@ input.onButtonPressed(Button.A, function () {
  
 ## Step 4
  
-Now change the value of ``||basic:showNumber||`` to be the sound with ``||gatorMicrophone:sound.intensity||`` 
+Now change the value of ``||basic:showNumber||`` to be the red value with ``||gatorPartice:get red value||`` 
  
  
 #### ~ tutorialhint
  
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(gatorMicrophone.getSoundIntensity())
+    basic.showNumber(gatorParticle.color(LEDToRead.Red))
 })
 ```
  
@@ -45,17 +51,26 @@ input.onButtonPressed(Button.A, function () {
  
 In the ``||math.math||`` menu you will find the ``||math.round||`` command to round to the nearest whole number
  
-Use this command to change the displayed value to be the sound rounded to the nearest whole number
+Use this command to change the displayed value to be the red value rounded to the nearest whole number
  
-### ~ tutorialhint
+#### ~ tutorialhint
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(Math.round(gatorMicrophone.getSoundIntensity())
+    basic.showNumber(Math.round(gatorParticle.color(LEDToRead.Red)))
 })
 ```
  
 ## step 6
-Great! You did it. Now you can test it out. How could you use the Math buttons to change the display to show a one or two digit number for normal sound inputs?
+Great! You did it. Now you can test it out. How could you modify it to take 
+your ``||gatorParticle: heart rate||``? 
+
+### ~ tutorialhint
+Look for the particle block that says bpm for beats per minute.
+```blocks
+input.onButtonPressed(Button.A, function () {
+	basic.showNumber(gatorParticle.heartbeat(HeartbeatType.BPM))
+})
+```
  
  
 ```ghost
@@ -69,5 +84,5 @@ if (0 * 0 == 0 + 0) {
 ```
  
 ```package
-gatorMicrophone=github:sparkfun/pxt-gator-microphone#v1.0.20
+gatorParticle=github:sparkfun/pxt-gator-particle#v1.1.3
 ```
