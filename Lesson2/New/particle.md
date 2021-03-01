@@ -3,7 +3,7 @@
  
 ## Step 1
  
-We are going to learn how to use a micro:bit and gatorMicrophone to display particle values using red light. 
+We are going to learn how to use a micro:bit and gatorParticle sensor to display particle values using red light. 
 First we have to ``||gatorParticle: initialize||`` the particle sensor when we ``||basic: turn on||`` the micro:bit.
  
 ```template
@@ -75,7 +75,7 @@ input.onButtonPressed(Button.A, function () {
  
 ```ghost
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(Math.round(gatorMicrophone.getSoundIntensity()))
+    basic.showNumber(Math.round(gatorParticle.color(LEDToRead.Red)))
 })
 if (0 * 0 == 0 + 0) {
     
