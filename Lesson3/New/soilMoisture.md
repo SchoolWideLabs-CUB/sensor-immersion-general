@@ -5,11 +5,7 @@
  
 We are going to learn how to use a micro:bit and gator:bit soil moisture sensor  to sound an alarm if the soil gets too dry
  
-Submit your answers using the google form linked on [this page](https://schoolwidelabs.github.io/sensor-immersion/assessments/Lesson3/soil_moisture_assessment.html) under your teacher's name. 
- 
- 
- 
-  
+
 ## Step 2
  
 When wiring the soil sensor, you should have the signal wire go from the SIG pin on the sensor to the port labeled P2 on the gator:bit. The power should go from the 3V3 pin on the sensor to the pin labeled P1 on the gator:bit. 
@@ -22,9 +18,7 @@ When wiring the soil sensor, you should have the signal wire go from the SIG pin
 ## Step 3
  
 First we need to ‘calibrate’ the sensor to find the ‘alarm value’ for soil moisture that is considered too dry. Values above this will sound the alarm. Use your skills from Lesson 2 to determine what the sensor reads for wet and dry soil. If you do not have plants or soil to test with, use a cup of water for wet soil and the air for dry soil. 
- 
-**Enter these values on questions 2 and 3 on the google form**
- 
+
 #### ~ tutorialhint
  
 You are going to need to make a temporary program or use an old program (from Lesson 2) that has the ``||basic:Show Value||`` and ``||gatorSoil:GetMoisture||`` commands. 
@@ -69,8 +63,6 @@ We recommend you have a ``||basic:Show Icon||``, ``||music:play tone||`` and ``|
 ## Step 7
  
 Congratulations, you're done!
- 
-**Fill out the final questions in the google form**
  
 #### ~ tutorialhint
  

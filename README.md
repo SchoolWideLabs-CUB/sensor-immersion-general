@@ -30,16 +30,22 @@ The Tutorials in this lesson explore how the micro:bit communicates with the sen
 The tutorials in this lesson help you figure out how the micro:bit asks questions about the data to create different combinations of lights and sound. 
 
 ### Environmental Sensor
-* [CO2 Alarm New](https://makecode.microbit.org/#tutorial:github:schoolwidelabs/sensor-immersion/Lesson3/New/environmental)
+* [CO2 Alarm New](https://makecode.microbit.org/#tutorial:github:schoolwidelabs/sensor-immersion-general/Lesson3/New/environmental)
 * [Extension](https://makecode.microbit.org/#tutorial:github:schoolwidelabs/sensor-immersion/Lesson3/Extensions/environmental)
 
+### Particle Sensor
+* [Show Particle Value](https://makecode.microbit.org/#tutorial:github:schoolwidelabs/sensor-immersion-general/Lesson3/New/particle)
+
 ### Soil Moisture Sensor
-* [Soil Moisture Alarm](https://makecode.microbit.org/#tutorial:github:schoolwidelabs/sensor-immersion/Lesson3/New/soilMoisture)
+* [Soil Moisture Alarm](https://makecode.microbit.org/#tutorial:github:schoolwidelabs/sensor-immersion-general/Lesson3/New/soilMoisture)
 * [Extension](https://makecode.microbit.org/#tutorial:github:schoolwidelabs/sensor-immersion/Lesson3/Extensions/soilMoisture)
 
 ### Sound Sensor
-* [Sound Graph](https://makecode.microbit.org/#tutorial:github:schoolwidelabs/sensor-immersion/Lesson3/New/sound)
+* [Sound Graph](https://makecode.microbit.org/#tutorial:github:schoolwidelabs/sensor-immersion-general/Lesson3/New/sound)
 * [Extension](https://makecode.microbit.org/#tutorial:github:schoolwidelabs/sensor-immersion/Lesson3/Extensions/sound)
+
+### UV Sensor
+* [Show UV](https://makecode.microbit.org/#tutorial:github:schoolwidelabs/sensor-immersion-general/Lesson3/New/uv)
 
 ## Additional Extensions
 These are additional extensions that students can complete if interested and/or they have time. These are still under development and may contain errors.

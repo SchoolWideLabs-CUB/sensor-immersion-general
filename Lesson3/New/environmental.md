@@ -4,12 +4,7 @@
 ## Step 1
  
 We are going to learn how to use a micro:bit and gator:bit environmental sensor  to sound an alarm if CO2 gets too high
- 
-Submit your answers using the google form linked on [this page](https://schoolwidelabs.github.io/sensor-immersion/assessments/Lesson3/environmental_assessment.html) under your teacher's name. 
- 
- 
- 
-  
+
 ## Step 2
  
 If you need help with wiring, take a look at [these guides.](https://docs.google.com/document/d/1KrhVLl_owwXz_xAVbcIEAG9O5N4wdBY3mjd-GX34Bag/edit?usp=sharing)
@@ -21,7 +16,6 @@ To start, use the GatorEnvironment ``||gatorEnvironment: initialize||`` command 
  
 First we need to 'calibrate' the sensor to find what values for CO2 are above normal and should sound the alarm. Use your skills from Lesson 2 to determine the current level of CO2 in the room. 
  
-**Enter this value on question 2 on the google form**
  
 #### ~ tutorialhint
  
@@ -30,9 +24,7 @@ You are going to need to make a temporary program or use an old program (from Le
 ## Step 4
  
 Now that you know what the CO2 level is in the room, pick a number that is higher than it. We are going to program the alarm to sound if the CO2 goes above this value.  
- 
-**Enter this 'alarm value' on question 3 on the google form**
- 
+  
 ## Step 5
  
 We need to set a logic command to test if the measured CO2 is below your selected 'alarm value'. Use the ``||gatorEnvironment.GatorEnvironment.get||`` and ``||logic. 0 < 0 ||`` commands to write this logic statement for when the observed CO2 is less than (<) your 'alarm value'. 
@@ -73,7 +65,6 @@ We recommend you have a ``||basic:Show Icon||``, ``||music:play tone||`` and ``|
  
 Congratulations, you're done!
  
-**Fill out the final questions in the google form**
  
 #### ~ tutorialhint
  

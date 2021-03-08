@@ -5,13 +5,8 @@
  
 We are going to learn how to use a micro:bit and gatorMicrophone to graph the sound values if they are loud enough to hear
  
-Submit your answers using the google form linked on [this page](https://schoolwidelabs.github.io/sensor-immersion/assessments/Lesson3/sound_assessment.html) under your teacher's name. 
- 
- 
  
 ## Step 2
- 
-**Before you begin, answer question 1 on the google form**
  
 Describe your plan for getting the microbit to display the sound intensity
  
@@ -21,15 +16,13 @@ If you need help with wiring, take a look at [these guides.](https://docs.google
  
 First we need to 'calibrate' the sensor to find the 'alarm value' for sound that is considered loud enough. Values above this will trigger the microbit to start graphing the sound intensity. Values below this will trigger the microbit to show an icon instead of a graph. Use your skills from Lesson 2 to determine what the sensor reads for loud and quiet noises. 
  
-**Enter these values on questions 2 and 3 on the google form**
- 
 #### ~ tutorialhint
  
 You are going to need to make a temporary program or use an old program (from Lesson 2) that has the ``||basic:Show Value||`` and ``||gatorMicrophone:Sound Intensity||`` commands. 
  
 ## Step 4
  
-We need to set a logic command to test if the measured sound is above your selected 'alarm value'. Use the ``||gatorMicrophone:Sound Intensity||``  and ``||logic. 0 < 0 ||`` commands to write this logic statement for when the observed soil moisture is greater than (>) your 'alarm value'. 
+We need to set a logic command to test if the measured sound is above your selected 'alarm value'. Use the ``||gatorMicrophone:Sound Intensity||``  and ``||logic. 0 < 0 ||`` commands to write this logic statement for when the observed sound level is greater than (>) your 'alarm value'. 
  
 Note that you may need to flip the < to a < depending on where you put the 'get moisture' command
  
@@ -81,8 +74,6 @@ We recommend you have a ``||basic:Show Icon||`` command.
 ## Step 8
  
 Congratulations, you're done!
- 
-**Fill out the final questions in the google form**
  
 #### ~ tutorialhint
  
