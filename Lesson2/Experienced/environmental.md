@@ -1,7 +1,7 @@
 # Collecting Temperature Data with the Environmental Sensor
 ### @explicitHints true
 
-# Tutorial Link: https://makecode.microbit.org/#tutorial:83973-76377-64692-21982
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:83973-76377-64692-21982 -->
 
 ## Step 1
 
