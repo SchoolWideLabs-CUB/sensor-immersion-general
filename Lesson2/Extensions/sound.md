@@ -1,14 +1,14 @@
 # Graph Sound Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:70741-67010-40827-70008 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:17622-71426-96452-01841 -->
 
 ## Step 1
 
 We are going to learn how to use a micro:bit and GatorMicrophone to display sound values as a graph on your micro:bit.
 
 ```template
-input.onButtonPressed(Button.A, function () {
+basic.forever(function () {
     basic.showNumber(Math.round(gatorMicrophone.getSoundIntensity())
 })
 ```
@@ -40,8 +40,8 @@ Now change the value being graphed to be the sound with ``||gatorMicrophone:soun
 #### ~ tutorialhint
 
 ```blocks
-input.onButtonPressed(Button.A, function () {
-    basic.showNumber(gatorMicrophone.getSoundIntensity())
+basic.forever(function () {
+    led.plotBarGraph(gatorMicrophone.getSoundIntensity(), 0)
 })
 ```   
 

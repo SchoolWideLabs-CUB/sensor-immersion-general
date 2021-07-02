@@ -1,7 +1,7 @@
-# show soil moisture tutorial
+# Show Soil Moisture Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:89712-04264-66320-16204 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:40860-55455-71124-21687 -->
 
 ## Step 1
 
@@ -26,7 +26,7 @@ You should have the signal come from the pin on P2 and the power come from the p
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(gatorSoil.moisture(AnalogPin.P1, GatorSoilType.Moisture, DigitalPin.P2))
+    basic.showNumber(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1))
 })
 ```
 
@@ -35,7 +35,7 @@ Great! You did it. Now you can test it out.
 
 ```ghost
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(gatorSoil.moisture(AnalogPin.P1, GatorSoilType.Moisture, DigitalPin.P2))
+    basic.showNumber(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1))
 })
 if (0 * 0 == 0 + 0) {
 

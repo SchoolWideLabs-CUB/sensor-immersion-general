@@ -1,7 +1,7 @@
-# display sound tutorial
+# Display Sound Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:27693-23574-28273-32669 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:39331-22995-44625-11349 -->
 
 ## Step 1
 
@@ -26,9 +26,9 @@ Now change the value of the shown number to be the ``||gatorMicrophone:sound int
 
 ## step 4
 
-Wouldn't this look better as a whole number, not a decimal!
+Wouldn't this look better as a whole number, not a decimal...
 
-Next, use the ``||math.round||`` (Math) command to round to the nearest whole number.
+The ``||math.round||`` (Math) command can be used to round to the nearest whole number.
 
 Use this command to change the displayed value to be the ``||gatorMicrophone:sound intensity||`` (GatorMicrophone) rounded to the nearest whole number.
 

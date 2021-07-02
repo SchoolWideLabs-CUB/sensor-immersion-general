@@ -1,7 +1,7 @@
 # Graph Soil Moisture Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:61984-30477-01902-22350 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:64380-15127-08844-57469 -->
 
 ## Step 1
 
@@ -9,7 +9,7 @@ We are going to learn how to use a micro:bit and GatorSoil to display soil moist
 
 ```template
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(gatorSoil.moisture(AnalogPin.P1, GatorSoilType.Moisture, DigitalPin.P2))
+    basic.showNumber(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1))
 })
 ```
 
