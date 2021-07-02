@@ -1,61 +1,50 @@
-# show Temperature CO2 and Humidity Data with the Environmental Sensor
+# Show Temperature CO2 and Humidity Data with the Environmental Sensor
 ### @explicitHints true
- 
+
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:61302-57914-50157-32031 -->
+
 ## Step 1
- 
-We are going to learn how to use a micro:bit and gator:bit environmental sensor  to display temperature, CO2 and humidity values based on different inputs
- 
-Submit your final code to your teacher on schoology (or wherever your teacher asks)
-  
+
+We are going to learn how to use a micro:bit and gator:bit environmental sensor to display temperature, CO2, and humidity values based on different inputs.
+
 ```template
-input.onButtonPressed(Button.A, function () {
-    
-})
-```
-  
-## Step 2
- 
-If you need help with wiring, take a look at [these guides.](https://docs.google.com/document/d/1KrhVLl_owwXz_xAVbcIEAG9O5N4wdBY3mjd-GX34Bag/edit?usp=sharing)
- 
-To start, use the GatorEnvironment ``||gatorEnvironment: initialize||`` command start the sensor when the ``||basic: program starts||``
- 
- 
-## Step 3
- 
-Use the ``||basic:showNumber||`` and ``||gatorEnvironment.GatorEnvironment.get||`` commands to show the temperature on the micro:bit. Make sure to ``||Math: round||`` 
-so you can read the number on the micro:bit. 
- 
-#### ~ tutorialhint
- 
-Rounding makes the value easier to read on the display. 
-Instead of seeing 72.9999999999, you just see 73.
- 
-```blocks
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
 })
- 
 ```
- 
+
+## Step 2
+
+If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/1bxYGD53_5G7AXUVdqf0oQRN7OQ0Bnc9e/view?usp=sharing)
+
+Provided below is the code you completed in the Show Temperature tutorial in Lesson 2.
+
+## Step 3
+
+To start, use the ``||gatorEnvironment: initialize||`` command (GatorEnvironment) to start the sensor ``||basic: on start||`` (Basic).
+
 ## Step 4
- 
-Now before we are going to add the display for the other sensors, we should label this one so we know what reading we are getting. Above the ``||basic:showNumber||`` command, add a ``||basic:showString||`` command and have it say “Temp” so you know that you are seeing the temperature.
- 
+
+Now before we are going to add the display for the other sensors, we should label this one so we know what reading we are getting. Above the ``||basic:show number||`` (Basic) command, add a ``||basic:show string||`` (Basic) command and have it show 'Temp' so you know that you are seeing the temperature.
+
 #### ~ tutorialhint
- 
+
 ```blocks
 input.onButtonPressed(Button.A, function () {
     basic.showString("Temp")
     basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
 })
- 
+
 ```
- 
-## Step 5
-Great! Now repeat steps 3 and 4 but have different inputs trigger the microbit showing different environmental data like humidity and CO2. Make sure you use ``||basic:showString||``to label them so you know what readings are being displayed
- 
+
+## Step 4
+Great! Now repeat steps 3 and 4 but have different ``||input:Inputs||`` (Input) trigger the micro:bit showing different environmental data like humidity and CO2. Make sure you use ``||basic:show string||`` (Basic) to label them
+so you know what readings are being displayed.
+
 #### ~ tutorialhint
-It could look like this, there are many correct answers 
+It could look like this, there are many correct answers:
+
+```blocks
 input.onButtonPressed(Button.A, function () {
     basic.showString("Temp")
     basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
@@ -69,7 +58,9 @@ input.onGesture(Gesture.Shake, function () {
     basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.eCO2)))
 })
 gatorEnvironment.beginEnvironment()
- 
+
+```
+
 ```ghost
 input.onButtonPressed(Button.A, function () {
     basic.showString("Temp")
@@ -86,8 +77,8 @@ input.onGesture(Gesture.Shake, function () {
 gatorEnvironment.beginEnvironment()
 if (0 * 0 == 0 + 0) {}
 ```
- 
- 
+
+
 ```package
 gatorEnvironment=github:sparkfun/pxt-gator-environment#v1.0.13
 ```
