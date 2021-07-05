@@ -1,10 +1,10 @@
 # Pressure and Humidity Gauge
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:21554-06272-31672-69102 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:38751-84751-08092-93200 -->
 
 ```template
-input.onButtonPressed(Button.A, function () {  basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
+input.onButtonPressed(Button.A, function () {  basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.pressure)))
 })
 gatorEnvironment.beginEnvironment()
 ```
