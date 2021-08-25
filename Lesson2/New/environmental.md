@@ -1,13 +1,14 @@
 # Collecting Temperature Data with the Environmental Sensor
 ### @explicitHints true
 
-<!-- Tutorial: https://makecode.microbit.org/#tutorial:78222-05534-05239-30450 -->
+<!-- Tutorial: https://makecode.microbit.org/#tutorial:47207-14626-92508-21978 -->
 
 ## Step 1
 
-We are going to learn how to use a micro:bit and gator:bit environmental sensor to display temperature values.
+We are going to learn how to use a micro:bit and gator:bit environmental sensor to show the temperature in the room.
 
 ```template
+basic.showIcon(IconNames.Yes)
 input.onButtonPressed(Button.A, function () {
 
 })
@@ -15,29 +16,33 @@ input.onButtonPressed(Button.A, function () {
 
 ## Step 2
 
+First, you need to wire the gator:environment sensor to your gator:bit!
+
 If you need help with wiring, take a look at [this guide](https://drive.google.com/file/d/1bxYGD53_5G7AXUVdqf0oQRN7OQ0Bnc9e/view?usp=sharing).
 
 ## Step 3
 
-To start, use the ``||gatorEnvironment: initialize sensors||`` (GatorEnvironment) command to turn the sensor on.
+To start, use the ``||gatorEnvironment: initialize sensors||`` (GatorEnvironment) block to turn the sensors on.
 
-Start the sensor when the micro:bit powers on, inside the ``||basic:on start||`` (Basic) block.
+Start the sensor when the micro:bit powers on, inside the ``||basic:on start||`` (Basic) event.
 
 ## Step 4
 
-Use the ``||basic:show number||`` (Basic) block to show a value on the micro:bit's led screen when ``||input:button A is pressed||`` (Input). It can be any number you want!
+Use the ``||basic:show number||`` (Basic) block to show a value on the micro:bit's led screen in ``||input:button A is pressed||`` (Input). It can be any number you want!
 
 ## Step 5
 
-Next, let's replace your number with the temperature from the sensor. Using the ``||gatorEnvironment:get value||`` (GatorEnvironment) command inside the ``||basic:show number||`` (Basic) block will show the temperature on the micro:bit.
+Next, let's replace your number with the temperature from the sensor. Drag the ``||gatorEnvironment:get value||`` (GatorEnvironment) block to where your number is and replace it inside the ``||basic:show number||`` (Basic) block.
 
-#### ~ tutorialhint
+Make sure it snaps into the right place!
 
-Watch out, there are two different ways to read the temperature. DegreesF will return Fahrenheit, while degreesC will return in Celsius!
+The value your environment sensor wants to display will be the temperature in degrees Celsius (``||gatorEnvironment:degreesC||``). From the dropdown, switch that value to ``||gatorEnvironment:degreesF||`` to display it in Fahrenheit!
 
 ## Step 6
 
-That number looks ugly, let's clean it up. To round to the nearest whole number, we can use the ``||Math: round||`` (Math) command. This will show the temperature as a whole number, much better!
+That number looks ugly, let's clean it up. To round to the nearest whole number, we can use the ``||Math: round||`` (Math) block. The ``||gatorEnvironment:get value||`` (GatorEnvironment) oval will go into this new ``||Math.round||`` (Math) oval, which will go into the ``||basic:show number||`` (Basic) block.
+
+This will show the temperature as a whole number, much better!
 
 #### ~ tutorialhint
 
@@ -55,7 +60,7 @@ input.onButtonPressed(Button.A, function () {
 ## Step 5
 Great, you did it!
 
-Now you can test it out. How could you use the Math blocks to change the display to two times the temperature? Would you round before or after you double the temperature?
+Now you can test it out. How could you use the ``||Math:Math||`` blocks to change the display to two times the temperature? Would you round before or after you double the temperature?
 
 
 ```ghost
