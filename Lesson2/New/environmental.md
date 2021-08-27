@@ -1,7 +1,7 @@
 # Collecting Temperature Data with the Environmental Sensor
 ### @explicitHints true
 
-<!-- Tutorial: https://makecode.microbit.org/#tutorial:47207-14626-92508-21978 -->
+<!-- Tutorial: https://makecode.microbit.org/#tutorial:56579-51775-13947-29256 -->
 
 ## Step 1
 
@@ -36,7 +36,21 @@ Next, let's replace your number with the temperature from the sensor. Drag the `
 
 Make sure it snaps into the right place!
 
-The value your environment sensor wants to display will be the temperature in degrees Celsius (``||gatorEnvironment:degreesC||``). From the dropdown, switch that value to ``||gatorEnvironment:degreesF||`` to display it in Fahrenheit!
+The value your environment sensor wants to display will be the temperature in degrees Celsius (``||gatorEnvironment:degreesC||``). Using the dropdown, what else can you display using the environmental sensor?
+
+#### ~ tutorialhint
+``||gatorEnvironment:degreesC||``: Temperature in Celsius.
+
+``||gatorEnvironment:degreesF||``: Temperature in Fahrenheit.
+
+``||gatorEnvironment:humidity||``: The relative humidity, measured as a percentage (0 - 100).
+
+``||gatorEnvironment:pressure||``: Barometric pressure, measured in Pascals. This changes at different altitudes, with sea level showing ~102,000 Pascals.
+
+``||gatorEnvironment:eCO2||``: The equivalent CO2 levels in the room, measured in parts per million. This can be raised by breathing on the sensor!
+
+``||gatorEnvironment:TVOC||``: The total volatile organic compounds in the room, measured in parts per billion. This can be raised by breathing on the sensor!
+
 
 ## Step 6
 
