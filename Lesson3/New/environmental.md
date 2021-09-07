@@ -1,7 +1,7 @@
 # CO2 Alarm Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:46342-61224-50290-79578 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:93192-65191-30872-71289 -->
 
 ## Step 1
 
@@ -33,7 +33,9 @@ We are going to make an alarm for when this value gets too high, so write down t
 
 ## Step 4
 
-Now that you know what the CO2 level is in the room, pick a number that is a little higher than it. We are going to program the alarm to sound if the CO2 goes above this value.  We will call this number your 'alarm value' for the rest of the tutorial.
+Now that you know what the CO2 level is in the room, pick a number that is a little higher than it. We are going to program the alarm to sound if the CO2 goes above this value.  
+
+We will call this number your 'alarm value' for the rest of the tutorial.
 
 ## Step 5
 
@@ -69,7 +71,7 @@ basic.forever(function () {
 ```
 
 ## Step 6
-Now, we need to set a logic command to test if the measured CO2 value from the sensor is below your selected 'alarm value'. Use the ``||logic.0 < 0||`` (Logic) oval block to write this in code. You need to use ``||gatorEnvironment.get eCO2 value||`` (GatorEnvironment) and your 'alarm value' to fill in the logic command.
+Now, we need to create a Logic hexagon block (or hex block) to test if the measured CO2 value from the sensor is below your selected 'alarm value'. Use the ``||logic.0 < 0||`` (Logic) hex block to write this in code. You need to use ``||gatorEnvironment.get eCO2 value||`` (GatorEnvironment) and your 'alarm value' to fill in the logic command.
 
 You want the logic command to check if the sensor's CO2 value is less than (<) your 'alarm value'.
 

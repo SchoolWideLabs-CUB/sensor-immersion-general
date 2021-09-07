@@ -1,11 +1,11 @@
 # Soil Moisture Alarm Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:97046-52804-13459-19788 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:70891-89974-16308-37681 -->
 
 ## Step 1
 
-We are going to learn how to use a micro:bit and gator:bit soil moisture sensor  to sound an alarm if the soil gets too dry.
+We are going to learn how to use a micro:bit and gator:soil moisture sensor to sound an alarm if the soil gets too dry.
 
 ```template
 basic.forever(function () {
@@ -15,11 +15,15 @@ basic.forever(function () {
 
 ## Step 2
 
+First, make sure your gator:soil sensor is correctly wired to your gator:bit!
+
 If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/18e1Yyj8VSsILIePJkI6tx6cDbjrS48s8/view?usp=sharing)
 
 ## Step 3
 
-First we need to ‘calibrate’ the sensor to find the ‘alarm value’ for soil moisture that is considered too dry. Values below this will sound the alarm. Use your skills from Lesson 2 to determine what the sensor reads for wet and dry soil. If you do not have plants or soil to test with, use a cup of water for wet soil and the air for dry soil.
+First, we need to figure out how dry is too dry. To do this, we need to run tests on dry soil and wet soil to figure out at what value we want our alarm to go off. Values from the sensor below this will sound the alarm.
+
+Use your skills from Lesson 2 to determine what the sensor reads for wet and dry soil. If you do not have plants or soil to test with, use a cup of water for wet soil and the air for dry soil.
 
 #### ~ tutorialhint
 
@@ -27,30 +31,37 @@ We have provided your code from Lesson 2 to start with. Run it with the micro:bi
 
 ## Step 4
 
-We need to set a logic command to test if the measured soil moisture is above your selected 'alarm value'. Use the ``||logic.0 < 0||`` (Logic) to write this logic command. You need to use the ``||gatorSoil.get moisture||`` (GatorSoil) command and your 'alarm value' to fill in the logic command.
+Now that you know what the soil moisture is for dry and wet soil, pick a number that is between the two. We are going to program the alarm to sound if the soil moisture falls below this value.
 
-You want the logic command to see if the sensor's moisture value is greater than (>) your 'alarm value'. It may be easier to think about if you use the dropdown in the ``||logic.0 < 0||`` (Logic) statement to change it to a ``||logic.0 > 0||`` (Logic) statement.
-
-#### ~ tutorialhint
-Remember that order matters, the 'alarm value' needs to be on the pointy side and the ``||gatorSoil:get moisture||`` (GatorSoil) needs to be on the side where the < or > opens towards.
-
-![Alarm Value Logic](https://schoolwidelabs.github.io/sensor-immersion/images/soil_code.png)
+We will call this number your 'alarm value' for the rest of the tutorial.
 
 ## Step 5
 
-Now that we have the 'alarm value' logic, it is time to make an ``||logic:if else statement||`` (Logic) to tell the micro:bit what to do when the soil moisture is ABOVE this value... that is, when the alarm is not going off.
+Now that we have the 'alarm value', it is time to make an ``||logic:if else statement||`` (Logic) to tell the micro:bit what to do when the soil moisture is ABOVE this value... that is, when the alarm is not going off.
 
-Inside your ``||basic:forever loop||`` (Basic), use your ``||logic:if else statement||`` (Logic), the ``||basic:show icon||`` (Basic) and the ``||basic:pause||`` (Basic) commands to determine what happens when the soil moisture observed is below the alarm value. Adding a pause after you show the icon keeps it from going too fast.
+Inside your ``||basic:forever||`` (Basic) event, create an ``||logic:if else statement||`` (Logic). There are two spots to place blocks here: in the ``||logic:if||`` and the ``||logic:else||``. For our program, we want the code in the ``||logic:if||`` side to run when the alarm is not going off.
 
-Remember, this is if the soil moisture is ABOVE your alarm value, so make it a happy icon!
+In the ``||logic:if||`` section, create code to show that the alarm is not going off using a ``||basic:show icon||`` (Basic) block. Remember, this is a good thing, so make it a happy icon!
+
 
 #### ~ tutorialhint
-It will look like this, although you may have an ‘alarm value’ other than 0.5
+It will look something like this:
 ```blocks
 basic.forever(function () {
-    if (gatorSoil.moisture(AnalogPin.P1, GatorSoilType.Moisture, DigitalPin.P2) > 0.5) {
+    if (true) {
         basic.showIcon(IconNames.Happy)
-        basic.pause(1000)
+    } else {
+
+    }
+})
+```
+
+If your icon disappears too fast, use a ``||basic:pause||`` (Basic) block to show it for a couple of seconds (shown below).
+```blocks
+basic.forever(function () {
+    if (true) {
+        basic.showIcon(IconNames.Happy)
+        basic.pause(2000)
     } else {
 
     }
@@ -58,14 +69,20 @@ basic.forever(function () {
 ```
 
 ## Step 6
+Now, we need to create a Logic hexagon block (or hex block) to test if the measured soil moisture value from the sensor is above your selected 'alarm value'. Use the ``||logic.0 < 0||`` (Logic) hex block to write this in code. You need to use ``||gatorSoil.get moisture||`` (GatorSoil) and your 'alarm value' to fill in the Logic hex block.
 
-The final step is to tell the micro:bit what to do if the observed soil moisture value is NOT above your 'alarm value'. This goes in the ``||logic:else||`` (Logic) part of the ``||logic:if else statement||`` (Logic).
+You want the logic command to check if the sensor's moisture value is greater than (>) your 'alarm value'.
 
-We recommend you have ``||basic:show icon||`` (Basic), ``||music:play tone||`` (Music), and ``||basic:pause||`` (Basic) commands in that order. The Icon and Music Tone should be alarming, as this is an alarm!
+#### ~ tutorialhint
+Remember that order matters, the ``||gatorSoil:get moisture||`` oval (GatorSoil) needs to be on the open side and your 'alarm value' needs to be on the pointy side.
+
+![Alarm Value Logic](https://schoolwidelabs.github.io/sensor-immersion/images/soil_code.png)
 
 ## Step 7
 
-Congratulations, you're done!
+The final step is to tell the micro:bit what to do if the measured soil moisture value is below your 'alarm value'. This goes in the ``||logic:else||`` part of the ``||logic:if else statement||`` (Logic). This is because if the measured value is above the value, it would run the blocks in the ``||logic:if||`` section instead!
+
+We recommend you have a ``||basic:show icon||`` (Basic), ``||music:play tone||`` (Music), and ``||basic:pause||`` (Basic) blocks in that order. The Icon and Music Tone should be alarming, make it whatever you want!
 
 #### ~ tutorialhint
 
@@ -73,7 +90,7 @@ Here is one example of what it could look like:
 
 ```blocks
 basic.forever(function () {
-    if (gatorSoil.moisture(AnalogPin.P1, GatorSoilType.Moisture, DigitalPin.P2) > 0.5) {
+    if (gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1) > 0.5) {
         basic.showIcon(IconNames.Happy)
         basic.pause(1000)
     } else {
@@ -83,6 +100,12 @@ basic.forever(function () {
     }
 })
 ```
+
+## Step 8
+
+Congratulations, you're done!
+
+If you want to make more complicated rhythms with ``||music:Music||``, head to the next tutorial!
 
 ```ghost
 input.onButtonPressed(Button.A, function () {
