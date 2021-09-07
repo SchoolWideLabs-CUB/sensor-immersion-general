@@ -1,7 +1,7 @@
 # CO2 Alarm Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:93192-65191-30872-71289 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:40594-13797-86453-72460 -->
 
 ## Step 1
 
@@ -107,8 +107,6 @@ basic.forever(function () {
 ## Step 8
 
 Congratulations, you're done!
-
-If you want to make more complicated rhythms with ``||music:Music||``, head to the next tutorial!
 
 
 

@@ -1,7 +1,7 @@
 # Soil Moisture Alarm Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:70891-89974-16308-37681 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:16117-69022-51344-53572 -->
 
 ## Step 1
 
@@ -104,8 +104,6 @@ basic.forever(function () {
 ## Step 8
 
 Congratulations, you're done!
-
-If you want to make more complicated rhythms with ``||music:Music||``, head to the next tutorial!
 
 ```ghost
 input.onButtonPressed(Button.A, function () {
