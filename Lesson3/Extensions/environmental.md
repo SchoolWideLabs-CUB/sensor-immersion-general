@@ -1,25 +1,31 @@
 # Pressure and Humidity Gauge
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:38751-84751-08092-93200 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:22003-24451-61273-88228 -->
 
 ```template
-input.onButtonPressed(Button.A, function () {  basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.pressure)))
+input.onButtonPressed(Button.A, function () {  basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
 })
 gatorEnvironment.beginEnvironment()
 ```
 
 ## Step 1
 
-We are going to build off of a simple pressure gauge and instead use variables to have it alternate between showing the pressure and showing the humidity.
+We are going to build off of a simple pressure gauge (provided below!) and instead use variables to have it alternate between showing the pressure and showing the humidity.
 
 ## Step 2
 
-First, we are going to make a "dummy variable" called "humidity" which tells the program if it is reading humidity (humidity=1) or not (humidity=0). Dummy variables have a value of either 1 or 0 and can act as a switch in a program to turn something on or off, changing between one of two states.
-
-In ``||basic:on start||`` (Basic), create a ``||variables:variable||`` (Variables) with the ``||variables:set||`` (Variables) command and call it "humidity". Then set it to 1.
+First, we need to make sure that the gator:environment sensor is still correctly wired to the gator:bit!
 
 If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/1bxYGD53_5G7AXUVdqf0oQRN7OQ0Bnc9e/view?usp=sharing)
+
+## Step 3
+
+First, we are going to make a "dummy variable" called "switch" which tells the program if it is reading humidity (switch=1) or pressure (switch=0). Dummy variables have a value of either 1 or 0 and can act as a switch in a program to turn something on or off, changing between two states.
+
+Create this variable by selecting ``||Variables:Make a Variable...||`` (Variables) and naming it 'switch'.
+
+In the ``||basic:on start||`` (Basic) event, use the ``||Variables:set switch||`` (Variables, after you make the variable 'switch') block to set the switch to 1.
 
 #### ~ tutorialhint
 
@@ -31,25 +37,28 @@ gatorEnvironment.beginEnvironment()
 let humidity = 1
 ```
 
-## Step 3
-Now you are going to modify what happens when ``||input:button A is pressed||`` (Input). Instead of having it show you the humidity, use Logic to have it show you the humidity ``||logic:if||`` the variable "humidity" = 1 and the pressure if the variable "humidity" = 0.
+## Step 4
+Now you are going to modify what happens when ``||input:button A is pressed||`` (Input). Instead of having it show you the humidity, use an ``||Logic:if else statement||`` (Logic) to have it show you the humidity ``||logic:if||`` the variable 'switch' = 1, otherwise (``||Logic:else||``) show the pressure.
+
+Use the skills you learned last lesson to create the ``||Logic:if else statement||``!
 
 #### ~ tutorialhint
 The ``||logic:if else||`` (Logic) command works well for this but you can organize the Logic however you choose, feel free to experiment!
 
-## Step 4
-Currently the program has no way to change between the two values for "humidity". After it shows the humidity, have it ``||variables:set||`` (Variables) "humidity" to 0. After it shows the pressure, have it ``||variables:set||`` (Variables) the "humidity" to 1.
-
 ## Step 5
-One last step, how do you know your program is working and showing humidity or pressure? Add a ``||basic:show string||`` (Basic) to show the letter 'H' right before it shows humidity. Repeat this with the letter 'P' right before it shows pressure.
-
-#### ~ tutorialhint
-If the letter flashes too quickly, add a ``||basic:pause||`` (Basic) command between the two commands so you can see the letter.
+Currently, the program has no way to change between the two values for 'switch'. After it shows the humidity, use the ``||variables:set||`` (Variables) block to set 'switch' to 0. After it shows the pressure, have it ``||variables:set||`` (Variables) 'switch' to 1.
 
 ## Step 6
-Congratulations, you are done! If you need to see an example of a working program, check the hint.
+One last step, how do you know your program is working and showing humidity or pressure? Add a ``||basic:show string||`` (Basic) block to show the letter 'H' right before it shows humidity. Repeat this with the letter 'P' right before it shows pressure.
 
 #### ~ tutorialhint
+If the letter flashes too quickly, add a ``||basic:pause||`` (Basic) block between the two blocks so you can see the letter.
+
+## Step 7
+Congratulations, you are done!
+
+#### ~ tutorialhint
+Here is one example of a working program:
 ```blocks
 input.onButtonPressed(Button.A, function () {
     if (humidity == 1) {
