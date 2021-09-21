@@ -1,7 +1,7 @@
 # Pressure and Humidity Gauge
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:22003-24451-61273-88228 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:00385-78328-31436-44791 -->
 
 ```template
 input.onButtonPressed(Button.A, function () {  basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
@@ -17,7 +17,7 @@ We are going to build off of a simple pressure gauge (provided below!) and inste
 
 First, we need to make sure that the gator:environment sensor is still correctly wired to the gator:bit!
 
-If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/1bxYGD53_5G7AXUVdqf0oQRN7OQ0Bnc9e/view?usp=sharing)
+If you need help with wiring, take a look at [this guide.](https://docs.google.com/document/d/1Wy_TLucsBvOR2eAHqqLUJwxPPhVsipK1Qq8MdPxL1X4/edit?usp=sharing)
 
 ## Step 3
 

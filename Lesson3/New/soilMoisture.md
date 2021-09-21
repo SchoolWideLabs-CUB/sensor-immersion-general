@@ -1,7 +1,7 @@
 # Soil Moisture Alarm Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:16117-69022-51344-53572 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:30808-00544-89483-19348 -->
 
 ## Step 1
 
@@ -17,7 +17,7 @@ basic.forever(function () {
 
 First, make sure your gator:soil sensor is correctly wired to your gator:bit!
 
-If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/18e1Yyj8VSsILIePJkI6tx6cDbjrS48s8/view?usp=sharing)
+If you need help with wiring, take a look at [this guide.](https://docs.google.com/document/d/12oWXe1Icgzu3zD3qE00i4QrkLfok5Tlvc9vSgI2yB3g/edit?usp=sharing)
 
 ## Step 3
 

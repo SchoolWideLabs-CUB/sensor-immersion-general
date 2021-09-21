@@ -1,7 +1,7 @@
 # Applause-o-Meter
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:24114-65178-18080-66771 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:07426-95924-46968-92139 -->
 
 ```template
 basic.showIcon(IconNames.Yes)
@@ -24,7 +24,7 @@ We are going to build off your Graph Louder Sounds program and add the 5 lights 
 ## Step 2
 First, make sure that your gator:microphone is still wired correctly to your gator:bit!
 
-If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/1cG0KVRXibqE1kTGMskL4cwI-tukBHXyh/view?usp=sharing)
+If you need help with wiring, take a look at [this guide.](https://docs.google.com/document/d/1oiQ0SdTL-UBnaFOiDmDOU_auGtIwzq84lymv9pf5Y0E/edit?usp=sharing)
 
 ## Step 3
 First, change the value of '50' to be much higher. We only want to trigger the applause-o-meter for applause, not for quiet noises.

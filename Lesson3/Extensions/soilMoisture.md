@@ -1,7 +1,7 @@
 # Soil Moisture With Lights
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:16925-27791-12397-41453 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:28058-16714-85501-26992 -->
 
 ```template
 basic.showIcon(IconNames.Yes)
@@ -25,7 +25,7 @@ We are going to build off your Graph Soil Moisture program and tell the 5 lights
 
 First, make sure your gator:soil sensor is still wired correctly to your gator:bit!
 
-If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/18e1Yyj8VSsILIePJkI6tx6cDbjrS48s8/view?usp=sharing)
+If you need help with wiring, take a look at [this guide.](https://docs.google.com/document/d/12oWXe1Icgzu3zD3qE00i4QrkLfok5Tlvc9vSgI2yB3g/edit?usp=sharing)
 
 ## Step 3
 

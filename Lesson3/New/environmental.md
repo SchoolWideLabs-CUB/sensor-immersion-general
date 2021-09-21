@@ -1,7 +1,7 @@
 # CO2 Alarm Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:40594-13797-86453-72460 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:98612-62867-45871-17972 -->
 
 ## Step 1
 
@@ -18,7 +18,7 @@ basic.forever(function () {
 
 First, let's make sure that your gator:environment is wired to your gator:bit correctly.
 
-If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/1bxYGD53_5G7AXUVdqf0oQRN7OQ0Bnc9e/view?usp=sharing)
+If you need help with wiring, take a look at [this guide.](https://docs.google.com/document/d/1Wy_TLucsBvOR2eAHqqLUJwxPPhVsipK1Qq8MdPxL1X4/edit?usp=sharing)
 
 ## Step 3
 
