@@ -1,7 +1,7 @@
 # Collecting Temperature Data with the Environmental Sensor
 ### @explicitHints true
 
-<!-- Tutorial: https://makecode.microbit.org/#tutorial:56579-51775-13947-29256 -->
+<!-- Tutorial: https://makecode.microbit.org/#tutorial:32548-83243-10331-94321 -->
 
 ## Step 1
 
@@ -18,7 +18,7 @@ input.onButtonPressed(Button.A, function () {
 
 First, you need to wire the gator:environment sensor to your gator:bit!
 
-If you need help with wiring, take a look at [this guide](https://drive.google.com/file/d/1bxYGD53_5G7AXUVdqf0oQRN7OQ0Bnc9e/view?usp=sharing).
+If you need help with wiring, take a look at [this guide](https://docs.google.com/document/d/1Wy_TLucsBvOR2eAHqqLUJwxPPhVsipK1Qq8MdPxL1X4/edit?usp=sharing).
 
 ## Step 3
 

@@ -1,7 +1,7 @@
 # Show Sound Tutorial
 ### @explicitHints true
 
-<!-- Tutorial: https://makecode.microbit.org/#tutorial:55481-14687-13374-45467 -->
+<!-- Tutorial: https://makecode.microbit.org/#tutorial:69540-64120-84994-08338 -->
 
 ## Step 1
 
@@ -17,7 +17,7 @@ input.onButtonPressed(Button.A, function () {
 
 First, we need to wire the gator:microphone to your gator:bit!
 
-If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/1cG0KVRXibqE1kTGMskL4cwI-tukBHXyh/view?usp=sharing)
+If you need help with wiring, take a look at [this guide.](https://docs.google.com/document/d/1oiQ0SdTL-UBnaFOiDmDOU_auGtIwzq84lymv9pf5Y0E/edit?usp=sharing)
 
 ## Step 3
 
