@@ -1,7 +1,7 @@
 # Graph Sound Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:11617-71423-19154-76400 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:89688-44579-44602-48967 -->
 
 ## Step 1
 
@@ -17,7 +17,7 @@ basic.forever(function () {
 
 Make sure your gator:microphone sensor is still wired correctly to your gator:bit.
 
-If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/1cG0KVRXibqE1kTGMskL4cwI-tukBHXyh/view?usp=sharing)
+If you need help with wiring, take a look at [this guide.](https://docs.google.com/document/d/1oiQ0SdTL-UBnaFOiDmDOU_auGtIwzq84lymv9pf5Y0E/edit?usp=sharing)
 
 To start, remove the ``||basic:show number||`` (Basic) and use the ``||led:plot bar graph||`` (Led) block to display a number as a graph on your micro:bit led screen.
 

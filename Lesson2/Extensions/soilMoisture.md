@@ -1,7 +1,7 @@
 # Graph Soil Moisture Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:54971-14046-98636-80007 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:56835-39106-97817-82671 -->
 
 ## Step 1
 
@@ -17,7 +17,7 @@ input.onButtonPressed(Button.A, function () {
 
 First, make sure your gator:soil is still wired correctly to your gator:bit!
 
-If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/18e1Yyj8VSsILIePJkI6tx6cDbjrS48s8/view?usp=sharing)
+If you need help with wiring, take a look at [this guide.](https://docs.google.com/document/d/12oWXe1Icgzu3zD3qE00i4QrkLfok5Tlvc9vSgI2yB3g/edit?usp=sharing)
 
 To start, remove the ``||basic:show number||`` (Basic) block and use the ``||led:plot bar graph||`` (Led) block to display any number as a graph on your micro:bit led screen.
 

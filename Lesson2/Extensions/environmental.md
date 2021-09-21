@@ -1,7 +1,7 @@
 # Show Temperature CO2 and Humidity Data with the Environmental Sensor
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:50699-08414-81210-87043 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:82017-13263-86910-14137 -->
 
 ## Step 1
 
@@ -18,7 +18,7 @@ input.onButtonPressed(Button.A, function () {
 
 First, make sure your gator:environment sensor is still wired to your gator:bit!
 
-If you need help with wiring, take a look at [this guide.](https://drive.google.com/file/d/1bxYGD53_5G7AXUVdqf0oQRN7OQ0Bnc9e/view?usp=sharing)
+If you need help with wiring, take a look at [this guide.](https://docs.google.com/document/d/1Wy_TLucsBvOR2eAHqqLUJwxPPhVsipK1Qq8MdPxL1X4/edit?usp=sharing)
 
 Provided below is the code you completed in the Show Temperature tutorial in Lesson 2.
 
