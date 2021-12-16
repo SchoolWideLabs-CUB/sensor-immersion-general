@@ -1,0 +1,104 @@
+# Storing data from multiple inputs
+### @explicitHints true
+ 
+## Welcome
+
+```template
+loops.everyInterval(1000, function () {
+    serial.writeValue("your word goes here", gatorMicrophone.getSoundIntensity())
+})
+```
+
+Now that we know how to store data from the sound sensor on your computer, it is time to modify your program to have different input values, instead of sound, we wil use Temperature, Humidity and Total Volitile Organic Compounds (TVOC).
+ 
+Before you start, make sure to add the ``||gatorEnvironment: initialize||`` command for the GatorEnvironment sensors
+
+#### ~ tutorialhint
+```blocks
+gatorEnvironment.beginEnvironment()
+loops.everyInterval(1000, function () {
+    serial.writeValue("your word goes here", gatorMicrophone.getSoundIntensity())
+})
+```
+ 
+## Step 2
+
+Now change what you are measuring to to temperature you need to change two things.
+
+1. Rename your varialbe, we called it "temp" in the hint
+2. Change the red inupt value from ``||gatorMicrophone:sound intensity||`` to ``||gatorEnvironment:get degreesF||``
+
+#### ~ tutorialhint
+```blocks
+gatorEnvironment.beginEnvironment()
+loops.everyInterval(500, function () {
+    serial.writeValue("temp", gatorEnvironment.getMeasurement(measurementType.degreesF))
+})
+```
+ 
+## step 3
+Great! now you want to round your values for temperature using the ``||math:round||`` block
+
+#### ~ tutorialhint
+
+```blocks
+gatorEnvironment.beginEnvironment()
+loops.everyInterval(500, function () {
+    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+})
+```
+ 
+## step 4
+right click (click with two fingers if on chromebook) on the ``||serial:serial write value||`` block and select duplicate
+
+Make two copies and put them in your ``||loops:every||`` event loop
+
+#### ~ tutorialhint
+
+```blocks
+gatorEnvironment.beginEnvironment()
+loops.everyInterval(500, function () {
+    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+})
+```
+
+##step 5
+now you need to change two things inside your second and third ``||serial:serial||`` blocks 
+
+1. Change the value labels to "humidity" and "TVOC"
+2. Change the input value to ``||gatorEnvironment:get humidity values||`` and ``||gatorEnvironment:get TVOC value||``
+
+#### ~ tutorialhint
+
+```blocks
+gatorEnvironment.beginEnvironment()
+loops.everyInterval(500, function () {
+    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+    serial.writeValue("humidity", Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
+    serial.writeValue("TVOC", Math.round(gatorEnvironment.getMeasurement(measurementType.TVOC)))
+})
+```
+
+
+## step 6
+You did it! Now download your program to the microbit and run it while it is plugged into your computer. Walk around and collect data in real time!
+
+When you are done, press stop. You can download the data using the download icon
+![download icon](https://github.com/schoolwidelabs/sensor-immersion/blob/master/static/images/download%20icon.png?raw=true)
+
+```ghost
+gatorEnvironment.beginEnvironment()
+loops.everyInterval(500, function () {
+    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
+    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.TVOC)))
+})
+```
+  
+```package
+gatorMicrophone=github:sparkfun/pxt-gator-microphone#v1.0.20
+gatorEnvironment=github:sparkfun/pxt-gator-environment#v1.0.13
+```
+
