@@ -1,7 +1,7 @@
 # Show Soil Moisture Tutorial
 ### @explicitHints true
 
-<!-- Tutorial: https://makecode.microbit.org/#tutorial:40913-70080-33499-49796 -->
+<!-- Tutorial: https://makecode.microbit.org/#tutorial:88143-50646-27932-08120 -->
 
 ## Step 1
 
@@ -55,13 +55,17 @@ Now you can test it out, the value you will see is a percentage between 0 and 1.
 
 How can we use the ``||Math:Math||`` oval blocks to make this a real percentage, between 0 and 100?
 
-### ~ tutorialhint
-Think about getting a percentage moisture by multiplying the value from the sensor by 100 before you round it.
-```blocks
-input.onButtonPressed(Button.A, function () {
-    basic.showNumber(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1) * 100)
-})
-```
+If it does not work, see the hint for a few common issues!
+
+#### ~ tutorialhint
+Here are some common issues and their solutions:
+1. Check for two red lights next to the 3.3V pin on the gator:bit. If they are off, check the following switch and make sure it is on.
+![VOut](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/VOUT_Switch.jpg?raw=true)
+
+2. If the speaker is not making any noise, check this switch and make sure it is on:
+![Speaker](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/SPEAKER_Switch.jpg?raw=true)
+
+3. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/12oWXe1Icgzu3zD3qE00i4QrkLfok5Tlvc9vSgI2yB3g/edit?usp=sharing).
 
 
 

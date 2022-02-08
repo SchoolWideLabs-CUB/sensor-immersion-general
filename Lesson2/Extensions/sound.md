@@ -1,7 +1,7 @@
 # Graph Sound Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:89688-44579-44602-48967 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:44829-80976-89136-29658 -->
 
 ## Step 1
 
@@ -70,6 +70,19 @@ basic.forever(function () {
 Great, you did it!
 
 Now you can test it out. Does the graph change as the sound changes? What happens if you change the second oval for the ``||led.plot bar graph||``? What if you change the small switch on the side of the sensor, does the ``||gatorMicrophone:sound intensity||`` go up or down?
+
+If it does not work, see the hint for a few common issues!
+
+#### ~ tutorialhint
+Here are some common issues and their solutions:
+1. Check for two red lights next to the 3.3V pin on the gator:bit. If they are off, check the following switch and make sure it is on.
+![VOut](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/VOUT_Switch.jpg?raw=true)
+
+2. If the speaker is not making any noise, check this switch and make sure it is on:
+![Speaker](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/SPEAKER_Switch.jpg?raw=true)
+
+3. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/1oiQ0SdTL-UBnaFOiDmDOU_auGtIwzq84lymv9pf5Y0E/edit?usp=sharing).
+
 
 
 ```ghost

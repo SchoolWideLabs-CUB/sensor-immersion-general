@@ -1,7 +1,7 @@
 # Collecting Temperature Data with the Environmental Sensor
 ### @explicitHints true
 
-<!-- Tutorial: https://makecode.microbit.org/#tutorial:32548-83243-10331-94321 -->
+<!-- Tutorial: https://makecode.microbit.org/#tutorial:24657-09610-20358-17155 -->
 
 ## Step 1
 
@@ -75,6 +75,18 @@ input.onButtonPressed(Button.A, function () {
 Great, you did it!
 
 Now you can test it out. How could you use the ``||Math:Math||`` blocks to change the display to two times the temperature? Would you round before or after you double the temperature?
+
+If it does not work, see the hint for a few common issues!
+
+#### ~ tutorialhint
+Here are some common issues and their solutions:
+1. Check for two red lights next to the 3.3V pin on the gator:bit. If they are off, check the following switch and make sure it is on.
+![VOut](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/VOUT_Switch.jpg?raw=true)
+
+2. If the speaker is not making any noise, check this switch and make sure it is on:
+![Speaker](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/SPEAKER_Switch.jpg?raw=true)
+
+3. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/1Wy_TLucsBvOR2eAHqqLUJwxPPhVsipK1Qq8MdPxL1X4/edit?usp=sharing).
 
 
 ```ghost

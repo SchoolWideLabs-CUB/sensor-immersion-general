@@ -1,7 +1,7 @@
 # Pressure and Humidity Gauge
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:00385-78328-31436-44791 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:55342-88867-27225-82602 -->
 
 ```template
 input.onButtonPressed(Button.A, function () {  basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
@@ -57,6 +57,8 @@ If the letter flashes too quickly, add a ``||basic:pause||`` (Basic) block betwe
 ## Step 7
 Congratulations, you are done!
 
+If you are having other issues, see the bottom of the hint for common issues!
+
 #### ~ tutorialhint
 Here is one example of a working program:
 ```blocks
@@ -77,6 +79,16 @@ let humidity = 0
 gatorEnvironment.beginEnvironment()
 humidity = 1
 ```
+
+Here are some common issues and their solutions:
+1. Check for two red lights next to the 3.3V pin on the gator:bit. If they are off, check the following switch and make sure it is on.
+![VOut](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/VOUT_Switch.jpg?raw=true)
+
+2. If the speaker is not making any noise, check this switch and make sure it is on:
+![Speaker](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/SPEAKER_Switch.jpg?raw=true)
+
+3. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/1Wy_TLucsBvOR2eAHqqLUJwxPPhVsipK1Qq8MdPxL1X4/edit?usp=sharing).
+
 
 ```ghost
 input.onButtonPressed(Button.A, function () {

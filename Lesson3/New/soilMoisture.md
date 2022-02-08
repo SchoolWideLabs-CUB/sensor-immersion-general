@@ -1,7 +1,7 @@
 # Soil Moisture Alarm Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:30808-00544-89483-19348 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:93423-66923-86309-61867 -->
 
 ## Step 1
 
@@ -104,6 +104,20 @@ basic.forever(function () {
 ## Step 8
 
 Congratulations, you're done!
+
+If it does not work, see the hint for a few common issues!
+
+#### ~ tutorialhint
+Here are some common issues and their solutions:
+1. Check for two red lights next to the 3.3V pin on the gator:bit. If they are off, check the following switch and make sure it is on.
+![VOut](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/VOUT_Switch.jpg?raw=true)
+
+2. If the speaker is not making any noise, check this switch and make sure it is on:
+![Speaker](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/SPEAKER_Switch.jpg?raw=true)
+
+3. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/12oWXe1Icgzu3zD3qE00i4QrkLfok5Tlvc9vSgI2yB3g/edit?usp=sharing).
+
+
 
 ```ghost
 input.onButtonPressed(Button.A, function () {

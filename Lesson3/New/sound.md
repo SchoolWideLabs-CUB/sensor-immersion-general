@@ -1,7 +1,7 @@
 # Graph Quieter Sounds
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:21736-51673-18538-40997 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:51362-93394-49555-62474 -->
 
 ## Step 1
 
@@ -97,6 +97,20 @@ basic.forever(function () {
 ## Step 7
 
 Congratulations, you're done!
+
+If it does not work, see the hint for a few common issues!
+
+#### ~ tutorialhint
+Here are some common issues and their solutions:
+1. Check for two red lights next to the 3.3V pin on the gator:bit. If they are off, check the following switch and make sure it is on.
+![VOut](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/VOUT_Switch.jpg?raw=true)
+
+2. If the speaker is not making any noise, check this switch and make sure it is on:
+![Speaker](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/SPEAKER_Switch.jpg?raw=true)
+
+3. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/1oiQ0SdTL-UBnaFOiDmDOU_auGtIwzq84lymv9pf5Y0E/edit?usp=sharing).
+
+
 
 ```ghost
 input.onButtonPressed(Button.A, function () {
