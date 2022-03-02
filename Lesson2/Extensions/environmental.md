@@ -1,7 +1,7 @@
 # Show Temperature CO2 and Humidity Data with the Environmental Sensor
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:87104-88238-93051-38632 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:04257-47319-32720-04849 -->
 
 ## Step 1
 
@@ -78,10 +78,7 @@ Here are some common issues and their solutions:
 1. Check for two red lights next to the 3.3V pin on the gator:bit. If they are off, check the following switch and make sure it is on.
 ![VOut](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/VOUT_Switch.jpg?raw=true)
 
-2. If the speaker is not making any noise, check this switch and make sure it is on:
-![Speaker](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/SPEAKER_Switch.jpg?raw=true)
-
-3. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/1Wy_TLucsBvOR2eAHqqLUJwxPPhVsipK1Qq8MdPxL1X4/edit?usp=sharing).
+2. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/1Wy_TLucsBvOR2eAHqqLUJwxPPhVsipK1Qq8MdPxL1X4/edit?usp=sharing).
 
 
 

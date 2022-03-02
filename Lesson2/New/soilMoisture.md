@@ -1,7 +1,7 @@
 # Show Soil Moisture Tutorial
 ### @explicitHints true
 
-<!-- Tutorial: https://makecode.microbit.org/#tutorial:88143-50646-27932-08120 -->
+<!-- Tutorial: https://makecode.microbit.org/#tutorial:38391-73018-48758-58680 -->
 
 ## Step 1
 
@@ -62,8 +62,8 @@ Here are some common issues and their solutions:
 1. Check for two red lights next to the 3.3V pin on the gator:bit. If they are off, check the following switch and make sure it is on.
 ![VOut](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/VOUT_Switch.jpg?raw=true)
 
-2. If the speaker is not making any noise, check this switch and make sure it is on:
-![Speaker](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/SPEAKER_Switch.jpg?raw=true)
+2. Double check that your P# values and your wiring matches up! The first value in the block (P2) should match the green wire, the second value (P1) should match the red wire. Also, do not set the power pin (red wire) as P0, it will not work.
+![Soil Block](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/gatorsoil_get_block.PNG?raw=true)
 
 3. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/12oWXe1Icgzu3zD3qE00i4QrkLfok5Tlvc9vSgI2yB3g/edit?usp=sharing).
 

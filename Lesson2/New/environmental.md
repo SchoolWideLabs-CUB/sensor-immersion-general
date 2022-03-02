@@ -1,7 +1,7 @@
 # Collecting Temperature Data with the Environmental Sensor
 ### @explicitHints true
 
-<!-- Tutorial: https://makecode.microbit.org/#tutorial:24657-09610-20358-17155 -->
+<!-- Tutorial: https://makecode.microbit.org/#tutorial:42338-14658-44576-54800 -->
 
 ## Step 1
 
@@ -83,8 +83,7 @@ Here are some common issues and their solutions:
 1. Check for two red lights next to the 3.3V pin on the gator:bit. If they are off, check the following switch and make sure it is on.
 ![VOut](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/VOUT_Switch.jpg?raw=true)
 
-2. If the speaker is not making any noise, check this switch and make sure it is on:
-![Speaker](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/SPEAKER_Switch.jpg?raw=true)
+2. If nothing is happening, double check to see if you initialized the sensor using the ``||gatorEnvironment:initialize gator:environment sensors||`` block in the ``||basic:on start||`` event!
 
 3. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/1Wy_TLucsBvOR2eAHqqLUJwxPPhVsipK1Qq8MdPxL1X4/edit?usp=sharing).
 

@@ -1,7 +1,7 @@
 # Graph Sound Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:44829-80976-89136-29658 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:45581-39253-96150-50774 -->
 
 ## Step 1
 
@@ -78,8 +78,8 @@ Here are some common issues and their solutions:
 1. Check for two red lights next to the 3.3V pin on the gator:bit. If they are off, check the following switch and make sure it is on.
 ![VOut](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/VOUT_Switch.jpg?raw=true)
 
-2. If the speaker is not making any noise, check this switch and make sure it is on:
-![Speaker](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/SPEAKER_Switch.jpg?raw=true)
+2. If the values are very low or very high, check the small switch on the side of the sensor (below). This should be set to medium, directly in the middle.
+![Gain Switch](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/Gain_Levels.jpg?raw=true)
 
 3. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/1oiQ0SdTL-UBnaFOiDmDOU_auGtIwzq84lymv9pf5Y0E/edit?usp=sharing).
 
