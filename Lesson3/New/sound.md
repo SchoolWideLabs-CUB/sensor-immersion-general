@@ -1,7 +1,7 @@
 # Graph Quieter Sounds
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:51362-93394-49555-62474 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:55989-53790-98115-17671 -->
 
 ## Step 1
 
