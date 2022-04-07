@@ -8,7 +8,7 @@ The Tutorials in this lesson explore how the micro:bit communicates with the sen
 * [Show Temperature](https://makecode.microbit.org/#tutorial:42338-14658-44576-54800)
 * [Extension](https://makecode.microbit.org/#tutorial:04257-47319-32720-04849)
 
-### Magnetometer 
+### Magnetometer
 * [Show Magnet Strength](https://makecode.microbit.org/#tutorial:29709-26446-53329-29210)
 * [Extension](https://makecode.microbit.org/#tutorial:65673-32947-10790-55062)
 
@@ -21,7 +21,7 @@ The Tutorials in this lesson explore how the micro:bit communicates with the sen
 * [Extension](https://makecode.microbit.org/#tutorial:45581-39253-96150-50774)
 
 ## Lesson 3
-The tutorials in this lesson help you figure out how the micro:bit asks questions about the data to create different combinations of lights and sound. 
+The tutorials in this lesson help you figure out how the micro:bit asks questions about the data to create different combinations of lights and sound.
 
 ### Environmental Sensor
 * [CO2 Alarm](https://makecode.microbit.org/#tutorial:79008-21159-90499-13245)
@@ -33,7 +33,7 @@ The tutorials in this lesson help you figure out how the micro:bit asks question
 * [Extension](https://makecode.microbit.org/#tutorial:82169-39635-74988-22085)
 
 ### Sound Sensor
-* [Graph Quieter Sounds](https://makecode.microbit.org/#tutorial:51362-93394-49555-62474)
+* [Graph Quieter Sounds](https://makecode.microbit.org/#tutorial:55989-53790-98115-17671)
 * [Extension](https://makecode.microbit.org/#tutorial:92199-60888-44740-20925)
 
 
@@ -42,12 +42,3 @@ These are additional extensions that students can complete if interested and/or 
 
 ### Tutorials
 * [More Tutorials](https://docs.google.com/drawings/d/1AyRWuEHIU7fZiIr2rk07dumOrBu_qCoHPsybaZwEUN4/edit?usp=sharing)
-
-
-
-
-
-
-
-
-
