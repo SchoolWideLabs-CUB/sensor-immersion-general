@@ -1,11 +1,11 @@
 # Display Magnetic Strength
 ### @explicitHints true
 
-<!-- Tutorial: https://makecode.microbit.org/#tutorial:29709-26446-53329-29210 -->
+<!-- Tutorial: https://makecode.microbit.org/#tutorial:18059-03779-14064-65014 -->
 
 ## Welcome
 
-We are going write a program to show the strength of the magnetic field measured by your micro:bit.
+We are going to write a program to show the strength of the magnetic field measured by your micro:bit.
 
 ## Step 1
 
