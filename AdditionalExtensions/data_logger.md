@@ -1,20 +1,20 @@
 # Log Classroom Data
 ### @explicitHints true
 
-<!-- Tutorial: https://makecode.microbit.org/#tutorial:38195-41470-62010-14629 -->
+<!-- Tutorial: https://makecode.microbit.org/#tutorial:54405-06893-73484-37653 -->
 
 
 ## Step 1
-In this tutorial, you will get to log temperature, humidity, and air quality data from your classroom to an SD card using the gator:log.
+In this tutorial, you will log temperature, humidity, and air quality data from your classroom to an SD card using the gator:log.
 
 First, you need to wire your environmental sensor and gator:log. Take a look at [this wiring tutorial](https://learn.sparkfun.com/tutorials/sparkfun-gatorlog-hookup-guide/all#hardware-assembly) for instructions and a picture of what it should look like.
 
 ## Step 2
-Now, let's begin programming! Take a look into your ``||GatorLog:GatorLog||`` drawer on the left side of the coding window.
+Now, let's begin programming! First, as we will be using the environmental sensor, place the ``||GatorEnvironment:initialize gator:Environment sensors||`` block from the ``||GatorEnvironment:GatorEnvironment||`` drawer in ``||Basic:on start||``.
 
-The first thing you should notice is the ``||GatorLog:initialize gator:log||`` block. This sensor, similar to the environmental sensor, needs to be turned on before you can use it. Place this ``||GatorLog:initialize||`` block into your ``||Basic:on start||`` event.
+Next, take a look into your ``||GatorLog:GatorLog||`` drawer on the left side of the coding window.
 
-As we will also be using the environmental sensor, place the ``||GatorEnvironment:initialize gator:Environment sensors||`` block from the ``||GatorEnvironment:GatorEnvironment||`` drawer in ``||Basic:on start||``.
+The first thing you should notice is the ``||GatorLog:initialize gator:log||`` block. This sensor, similar to the environmental sensor, needs to be turned on before you can use it. Place this ``||GatorLog:initialize||`` block into your ``||Basic:on start||`` event under your ``||gatorEnvironment:initialize gator:environment sensors||`` block.
 
 #### ~ tutorialhint
 ```blocks
@@ -58,7 +58,7 @@ As we are going to save three different oval blocks of data in a single row, we 
 
 ``||Text:Join||`` will take in multiple oval blocks and make them into one long line, which can be used in the ``||GatorLog:write line||`` block.
 
-For this block, we want to give titles to the data we are going to store! As we are saving 3 different values, we will need to ``||Text:join||`` 5 ovals (they need to be separated by commas!); that would be 1. "Temperature (F)" ; 2. "," ; 3. "Humidity" ; 4. "," ; 5. "VOCs"
+For this block, we want to give titles to the data we are going to store! As we are saving 3 different values separated by commas, we will need to ``||Text:join||`` 5 ovals (they need to be separated by commas!); that would be 1. <"Temperature (F)"> ; 2. <","> ; 3. <"Humidity"> ; 4. <","> ; 5. <"VOCs">
 
 #### ~ tutorialhint
 Don't forget, you need to separate the values by commas! That's what tells the .csv to go to the next cell in the spreadsheet. This ``||Text:join||`` needs to have the following:
@@ -75,7 +75,7 @@ Important question: what event are we going to use? For fun, let's use a new eve
 This event, called the ``||Loops:every __ ms||``, executes the code blocks inside the event after a certain amount of time. This is perfect for us, it will help us record data at regular intervals! Let's make it ``||Loops:every 500 ms||``, which translates to twice every second.
 
 ## Step 8
-Now, let's populate our ``||Loops:every||`` event with a block to write data to the file.
+Now, let's put a block to write data to a file in our ``||Loops:every||`` event.
 
 Right click on your ``||GatorLog:write line||`` block in ``||basic:on start||`` and duplicate it. This will make it easy for us!
 
