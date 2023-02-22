@@ -4,7 +4,7 @@
 <!-- Tutorial Link: https://makecode.microbit.org/#tutorial:55342-88867-27225-82602 -->
 
 ```template
-input.onButtonPressed(Button.A, function () {  basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
+input.onButtonPressed(Button.A, function () {  basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.humidity)))
 })
 gatorEnvironment.beginEnvironment()
 ```
@@ -31,7 +31,7 @@ In the ``||basic:on start||`` (Basic) event, use the ``||Variables:set switch||`
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.pressure)))
+    basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.pressure)))
 })
 gatorEnvironment.beginEnvironment()
 let humidity = 1
@@ -66,12 +66,12 @@ input.onButtonPressed(Button.A, function () {
     if (humidity == 1) {
         basic.showString("H")
         basic.pause(1000)
-        basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
+        basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.humidity)))
         humidity = 0
     } else if (humidity == 0) {
         basic.showString("P")
         basic.pause(1000)
-        basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.pressure)))
+        basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.pressure)))
         humidity = 1
     }
 })
@@ -95,12 +95,12 @@ input.onButtonPressed(Button.A, function () {
     if (Humidity == 1) {
         basic.showString("H")
         basic.pause(1000)
-        basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
+        basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.humidity)))
         Humidity = 0
     } else if (Humidity == 0) {
         basic.showString("P")
         basic.pause(1000)
-        basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.pressure)))
+        basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.pressure)))
         Humidity = 1
     }
 })
