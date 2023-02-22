@@ -1,7 +1,7 @@
 # CO2 Alarm Tutorial
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:79008-21159-90499-13245 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:71215-25575-38916-06857-->
 
 ## Step 1
 
@@ -10,7 +10,7 @@ We are going to learn how to use a micro:bit and gator:bit environmental sensor 
 ```template
 gatorEnvironment.beginEnvironment()
 basic.forever(function () {
-    basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.eCO2)))
+    basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.eCO2)))
 })
 ```
 
@@ -93,7 +93,7 @@ Here is one example of what it could look like:
 ```blocks
 gatorEnvironment.beginEnvironment()
 basic.forever(function () {
-    if (gatorEnvironment.getMeasurement(measurementType.eCO2) <= 2000) {
+    if (gatorEnvironment.measurement(MeasurementType.eCO2) <= 2000) {
         basic.showIcon(IconNames.Happy)
         basic.pause(1000)
     } else {
@@ -127,7 +127,7 @@ input.onButtonPressed(Button.A, function () {  basic.showNumber(Math.round(gator
 })
 gatorEnvironment.beginEnvironment()
 basic.forever(function () {
-    if (gatorEnvironment.getMeasurement(measurementType.eCO2) <= 2000) {
+    if (gatorEnvironment.measurement(MeasurementType.eCO2) <= 2000) {
         basic.showIcon(IconNames.Happy)
         basic.pause(1000)
     } else {
