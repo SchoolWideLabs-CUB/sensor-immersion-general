@@ -10,7 +10,7 @@ We are going to learn how to program a micro:bit and gator:bit environmental sen
 ```template
 gatorEnvironment.beginEnvironment()
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+    basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.degreesF)))
 })
 ```
 
@@ -33,7 +33,7 @@ Above the ``||basic:show number||`` (Basic) block, add a ``||basic:show string||
 ```blocks
 input.onButtonPressed(Button.A, function () {
     basic.showString("Temp")
-    basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+    basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.degreesF)))
 })
 
 ```
@@ -53,15 +53,15 @@ It could look like this, there are many correct answers:
 ```blocks
 input.onButtonPressed(Button.A, function () {
     basic.showString("Temp")
-    basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+    basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.degreesF)))
 })
 input.onButtonPressed(Button.B, function () {
     basic.showString("Humidity")
-    basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
+    basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.humidity)))
 })
 input.onGesture(Gesture.Shake, function () {
     basic.showString("CO2")
-    basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.eCO2)))
+    basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.eCO2)))
 })
 gatorEnvironment.beginEnvironment()
 
@@ -85,15 +85,15 @@ Here are some common issues and their solutions:
 ```ghost
 input.onButtonPressed(Button.A, function () {
     basic.showString("Temp")
-    basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+    basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.degreesF)))
 })
 input.onButtonPressed(Button.B, function () {
     basic.showString("Humidity")
-    basic.showNumber(gatorEnvironment.getMeasurement(measurementType.humidity))
+    basic.showNumber(gatorEnvironment.measurement(MeasurementType.humidity))
 })
 input.onGesture(Gesture.Shake, function () {
     basic.showString("CO2")
-    basic.showNumber(gatorEnvironment.getMeasurement(measurementType.eCO2))
+    basic.showNumber(gatorEnvironment.measurement(MeasurementType.eCO2))
 })
 gatorEnvironment.beginEnvironment()
 if (0 * 0 == 0 + 0) {}
