@@ -66,12 +66,12 @@ Instead of seeing 72.9999999999, you just see 73.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+    basic.showNumber(gatorEnvironment.measurement(MeasurementType.degreesF))
 })
 
 ```
 
-## Step 5
+## Step 7
 Great, you did it!
 
 Now you can test it out. How could you use the ``||Math:Math||`` blocks to change the display to two times the temperature? Would you round before or after you double the temperature?
@@ -90,7 +90,7 @@ Here are some common issues and their solutions:
 
 ```ghost
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF) * 2))
+    basic.showNumber(Math.round((gatorEnvironment.measurement(MeasurementType.degreesF)))
 })
 gatorEnvironment.beginEnvironment()
 ```
