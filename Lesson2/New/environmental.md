@@ -1,7 +1,7 @@
 # Collecting Temperature Data with the Environmental Sensor
 ### @explicitHints true
 
-<!-- Tutorial: https://makecode.microbit.org/#tutorial:68006-23108-64231-19535 -->
+<!-- Tutorial: https://makecode.microbit.org/#tutorial:48381-47067-01340-74044 -->
 
 ## Step 1
 
@@ -66,7 +66,7 @@ Instead of seeing 72.9999999999, you just see 73.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(gatorEnvironment.measurement(MeasurementType.degreesF))
+    basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.degreesF)))
 })
 
 ```
