@@ -1,7 +1,7 @@
 # Pressure and Humidity Gauge
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:55342-88867-27225-82602 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:66594-32206-49311-97668 -->
 
 ```template
 input.onButtonPressed(Button.A, function () {  basic.showNumber(Math.round(gatorEnvironment.measurement(MeasurementType.humidity)))
