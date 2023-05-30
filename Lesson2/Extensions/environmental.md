@@ -1,7 +1,7 @@
 # Show Temperature CO2 and Humidity Data with the Environmental Sensor
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:04257-47319-32720-04849 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:22374-52751-99539-74017 -->
 
 ## Step 1
 
