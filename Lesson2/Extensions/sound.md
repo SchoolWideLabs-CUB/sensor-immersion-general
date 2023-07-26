@@ -100,5 +100,5 @@ if (0 * 0 == 0 + 0) {
 ```
 
 ```package
-gatorMicrophone=github:sparkfun/pxt-gator-microphone#v1.0.20
+gatorMicrophone=github:sparkfun/pxt-gator-microphone
 ```
