@@ -129,5 +129,5 @@ basic.forever(function () {
 ```
 
 ```package
-gatorMicrophone=github:sparkfun/pxt-gator-microphone#v1.0.20
+gatorMicrophone=github:sparkfun/pxt-gator-microphone
 ```
