@@ -9,7 +9,7 @@ We are going to learn how to use a micro:bit and gator:soil to show the soil moi
 
 ```template
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1))
+    basic.showNumber(gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1))
 })
 ```
 
@@ -47,7 +47,7 @@ You should have the signal come from the pin on P2 and the power come from the p
 ```blocks
 basic.forever(function () {
     led.plotBarGraph(
-    gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1),
+    gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1),
     0
     )
 })
@@ -65,7 +65,7 @@ The wettest reading does not go over 0.75, so let’s make that value 0.75.
 ```blocks
 basic.forever(function () {
     led.plotBarGraph(
-    gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1),
+    gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture DigitalPin.P1),
     0.75
     )
 })
@@ -94,7 +94,7 @@ Here are some common issues and their solutions:
 ```ghost
 basic.forever(function () {
     led.plotBarGraph(
-    gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1),
+    gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture DigitalPin.P1),
     0.75
     )
 })
