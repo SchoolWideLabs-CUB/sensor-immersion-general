@@ -6,7 +6,7 @@
 ```template
 basic.showIcon(IconNames.Yes)
 basic.forever(function () {
-    if (gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1) > 0.5) {
+    if (gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1) > 0.5) {
         basic.showIcon(IconNames.Happy)
         basic.pause(1000)
     } else {
@@ -72,11 +72,11 @@ let strip = neopixel.create(DigitalPin.P12, 5, NeoPixelMode.RGB)
 strip.setBrightness(50)
 basic.showIcon(IconNames.Yes)
 basic.forever(function () {
-    if (gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1) > 0.5) {
+    if (gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1) > 0.5) {
         basic.showIcon(IconNames.Happy)
     } else {
         basic.clearScreen()
-        strip.showBarGraph(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1), 0.5)
+        strip.showBarGraph(gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1), 0.5)
     }
 })
 ```
@@ -97,15 +97,15 @@ input.onButtonPressed(Button.A, function () {
     Math.round(0),
     0
     )
-    basic.showNumber(Math.round(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1)))
+    basic.showNumber(Math.round(gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1)))
     basic.pause(100)
 })
 let strip = neopixel.create(DigitalPin.P12, 5, NeoPixelMode.RGB)
 strip.setBrightness(50)
 basic.forever(function () {
-    if (gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1) < 0.5) {
+    if (gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1) < 0.5) {
         basic.clearScreen()
-        strip.showBarGraph(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1), 0.5)
+        strip.showBarGraph(gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1), 0.5)
     } else {
         basic.showIcon(IconNames.Happy)
     }
