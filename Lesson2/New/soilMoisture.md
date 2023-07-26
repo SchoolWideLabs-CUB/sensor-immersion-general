@@ -44,7 +44,7 @@ This oval block is tricky, so double check and make sure that your green wire go
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1))
+    basic.showNumber(gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1))
 })
 ```
 
@@ -72,7 +72,7 @@ Here are some common issues and their solutions:
 
 ```ghost
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(Math.round(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1)))
+    basic.showNumber(Math.round(gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1)))
 })
 if (0 * 0 == 0 + 0) {
 
