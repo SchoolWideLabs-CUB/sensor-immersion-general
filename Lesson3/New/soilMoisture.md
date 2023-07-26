@@ -9,7 +9,7 @@ We are going to learn how to use a micro:bit and gator:soil moisture sensor to s
 
 ```template
 basic.forever(function () {
-    basic.showNumber(gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1))
+    basic.showNumber(gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1))
 })
 ```
 
@@ -90,7 +90,7 @@ Here is one example of what it could look like:
 
 ```blocks
 basic.forever(function () {
-    if (gatorSoil.moisture(AnalogPin.P2, GatorSoilType.Moisture, DigitalPin.P1) > 0.5) {
+    if (gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1) > 0.5) {
         basic.showIcon(IconNames.Happy)
         basic.pause(1000)
     } else {
@@ -121,10 +121,10 @@ Here are some common issues and their solutions:
 
 ```ghost
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(Math.round(gatorSoil.moisture(AnalogPin.P1, GatorSoilType.Moisture, DigitalPin.P2)))
+    basic.showNumber(Math.round(gatorSoil.moisture(AnalogPin.P1, gatorSoilType.soilMoisture, DigitalPin.P2)))
 })
 basic.forever(function () {
-    if (gatorSoil.moisture(AnalogPin.P1, GatorSoilType.Moisture, DigitalPin.P2) > 0.5) {
+    if (gatorSoil.moisture(AnalogPin.P1, gatorSoilType.soilMoisture, DigitalPin.P2) > 0.5) {
         basic.showIcon(IconNames.Happy)
         basic.pause(1000)
     } else {
@@ -137,5 +137,5 @@ basic.forever(function () {
 
 
 ```package
-gatorSoil=github:sparkfun/pxt-gator-soil#v1.0.3
+gatorSoil=github:sparkfun/pxt-gator-soil
 ```
