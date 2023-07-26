@@ -106,5 +106,5 @@ if (0 * 0 == 0 + 0) {
 ```
 
 ```package
-gatorSoil=github:sparkfun/pxt-gator-soil#v1.0.3
+gatorSoil=github:sparkfun/pxt-gator-soil
 ```
