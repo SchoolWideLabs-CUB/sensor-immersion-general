@@ -115,8 +115,8 @@ basic.forever(function () {
 
 
 ```package
-gatorSoil=github:sparkfun/pxt-gator-soil#v1.0.3
+gatorSoil=github:sparkfun/pxt-gator-soil
 
-neopixel=github:microsoft/pxt-neopixel#v0.7.3
+neopixel=github:microsoft/pxt-neopixel
 
 ```
