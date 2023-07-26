@@ -105,6 +105,6 @@ basic.forever(function () {
 ```
 
 ```package
-gatorMicrophone=github:sparkfun/pxt-gator-microphone#v1.0.20
-neopixel=github:microsoft/pxt-neopixel#v0.7.3
+gatorMicrophone=github:sparkfun/pxt-gator-microphone
+neopixel=github:microsoft/pxt-neopixel
 ```    
