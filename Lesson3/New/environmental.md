@@ -140,5 +140,5 @@ basic.forever(function () {
 
 
 ```package
-gatorEnvironment=github:sparkfun/pxt-gator-environment#v1.0.13
+gatorEnvironment=github:sparkfun/pxt-gator-environment
 ```
