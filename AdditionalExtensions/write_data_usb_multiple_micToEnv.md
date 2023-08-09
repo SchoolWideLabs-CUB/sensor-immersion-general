@@ -32,7 +32,7 @@ Now to change what you are measuring to temperature you need to change two thing
 ```blocks
 gatorEnvironment.beginEnvironment()
 loops.everyInterval(1000, function () {
-    serial.writeValue("temp", gatorEnvironment.getMeasurement(measurementType.degreesF))
+    serial.writeValue("temp", gatorEnvironment.measurement(MeasurementType.degreesF))
 })
 ```
  
@@ -44,7 +44,7 @@ Great! now you want to round your values for temperature using the ``||math:roun
 ```blocks
 gatorEnvironment.beginEnvironment()
 loops.everyInterval(1000, function () {
-    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+    serial.writeValue("temp", Math.round(gatorEnvironment.measurement(MeasurementType.degreesF)))
 })
 ```
  
@@ -58,9 +58,9 @@ Make two copies and put them in your ``||loops:every||`` event loop
 ```blocks
 gatorEnvironment.beginEnvironment()
 loops.everyInterval(1000, function () {
-    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
-    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
-    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
+    serial.writeValue("temp", Math.round(gatorEnvironment.measurement(MeasurementType.degreesF)))
+    serial.writeValue("temp", Math.round(gatorEnvironment.measurement(MeasurementType.degreesF)))
+    serial.writeValue("temp", Math.round(gatorEnvironment.measurement(MeasurementType.degreesF)))
 })
 ```
 
@@ -75,9 +75,9 @@ now you need to change two things inside your second and third ``||serial:serial
 ```blocks
 gatorEnvironment.beginEnvironment()
 loops.everyInterval(1000, function () {
-    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
-    serial.writeValue("humidity", Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
-    serial.writeValue("TVOC", Math.round(gatorEnvironment.getMeasurement(measurementType.TVOC)))
+    serial.writeValue("temp", Math.round(gatorEnvironment.measurement(MeasurementType.degreesF)))
+    serial.writeValue("humidity", Math.round(gatorEnvironment.measurement(MeasurementType.humidity)))
+    serial.writeValue("TVOC", Math.round(gatorEnvironment.measurement(MeasurementType.TVOC)))
 })
 ```
 
@@ -114,13 +114,13 @@ When you are done you can download the data using the download icon
 ```ghost
 gatorEnvironment.beginEnvironment()
 loops.everyInterval(1000, function () {
-    serial.writeValue("temp", Math.round(gatorEnvironment.getMeasurement(measurementType.degreesF)))
-    serial.writeValue("humidity", Math.round(gatorEnvironment.getMeasurement(measurementType.humidity)))
-    serial.writeValue("TVOC", Math.round(gatorEnvironment.getMeasurement(measurementType.TVOC)))
+    serial.writeValue("temp", Math.round(gatorEnvironment.measurement(MeasurementType.degreesF)))
+    serial.writeValue("humidity", Math.round(gatorEnvironment.measurement(MeasurementType.humidity)))
+    serial.writeValue("TVOC", Math.round(gatorEnvironment.measurement(MeasurementType.TVOC)))
 })
 ```
   
 ```package
-gatorMicrophone=github:sparkfun/pxt-gator-microphone#v1.0.20
-gatorEnvironment=github:sparkfun/pxt-gator-environment#v1.0.13
+gatorMicrophone=github:sparkfun/pxt-gator-microphone
+gatorEnvironment=github:sparkfun/pxt-gator-environment
 ```
