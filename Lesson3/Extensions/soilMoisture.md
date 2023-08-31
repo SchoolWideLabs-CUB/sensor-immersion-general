@@ -1,12 +1,12 @@
 # Soil Moisture With Lights
 ### @explicitHints true
 
-<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:82169-39635-74988-22085 -->
+<!-- Tutorial Link: https://makecode.microbit.org/#tutorial:33574-28912-08153-09195 -->
 
 ```template
 basic.showIcon(IconNames.Yes)
 basic.forever(function () {
-    if (gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1) > 0.5) {
+    if (Math.round(100 * gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1))> 50 {
         basic.showIcon(IconNames.Happy)
         basic.pause(1000)
     } else {
@@ -19,7 +19,9 @@ basic.forever(function () {
 
 ## Step 1
 
-We are going to build off your Graph Soil Moisture program and tell the 5 lights on the gator:bit to plot a bar that ticks down as the plant dries out. If the plant is wet, the micro:bit will show a smiley face.
+We are going to build off your Graph Soil Moisture program and tell the 5 lights on the gator:bit to plot a bar that ticks down as the plant dries out. If the plant is wet, the micro:bit will show a smiley face. 
+Note that the code looks a littel different than your grpah soil moisture code because we 
+created a percentage soil moisture instead of using the raw data value
 
 ## Step 2
 
@@ -29,7 +31,7 @@ If you need help with wiring, take a look at [this guide.](https://docs.google.c
 
 ## Step 3
 
-First, change the value of ‘0.5’ to be your old alarm value or a value slightly above it. We only want to trigger the dry soil graph after the plant has started to dry out, not when it is fully watered. This value is called your ‘new alarm value’.
+First, change the value of ‘50‘ to be your old alarm value or a value slightly above it. We only want to trigger the dry soil graph after the plant has started to dry out, not when it is fully watered. This value is called your ‘new alarm value’.
 
 Instead of using ``||basic:show icon||``, ``||music:play tone||``, and ``||basic:pause||`` on the micro:bit we are going to use the lights on the gator:bit, which are called the ``||Neopixel:Neopixels||``. To use them, we need to first initialize them.
 
@@ -72,12 +74,13 @@ let strip = neopixel.create(DigitalPin.P12, 5, NeoPixelMode.RGB)
 strip.setBrightness(50)
 basic.showIcon(IconNames.Yes)
 basic.forever(function () {
-    if (gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1) > 0.5) {
+    if (Math.round(100 * gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1)) > 50) {
         basic.showIcon(IconNames.Happy)
     } else {
         basic.clearScreen()
-        strip.showBarGraph(gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1), 0.5)
+        strip.showBarGraph(Math.round(100 * gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1)), 50)
     }
+    basic.pause(1000)
 })
 ```
 
@@ -85,8 +88,7 @@ Here are some common issues and their solutions:
 1. Check for two red lights next to the 3.3V pin on the gator:bit. If they are off, check the following switch and make sure it is on.
 ![VOut](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/VOUT_Switch.jpg?raw=true)
 
-2. If the speaker is not making any noise, check this switch and make sure it is on:
-![Speaker](https://github.com/schoolwidelabs/sensor-immersion-general/blob/master/images/SPEAKER_Switch.jpg?raw=true)
+2. Make sure you have initialized the neopixel strip on Pin 12
 
 3. Otherwise, double check your wiring with the wiring guide [here](https://docs.google.com/document/d/12oWXe1Icgzu3zD3qE00i4QrkLfok5Tlvc9vSgI2yB3g/edit?usp=sharing).
 
@@ -97,7 +99,7 @@ input.onButtonPressed(Button.A, function () {
     Math.round(0),
     0
     )
-    basic.showNumber(Math.round(gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1)))
+    basic.showNumber(Math.round(Math.round(100 * gatorSoil.moisture(AnalogPin.P2, gatorSoilType.soilMoisture, DigitalPin.P1)))
     basic.pause(100)
 })
 let strip = neopixel.create(DigitalPin.P12, 5, NeoPixelMode.RGB)
